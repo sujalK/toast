@@ -1,7 +1,8 @@
 <template>
   <button @click="show" class="btn">Show</button>
   <toast
-      type="error"
+      type="success"
+      message="The data saved successfully"
       :show="showToast"
       @hide="hide"
   />

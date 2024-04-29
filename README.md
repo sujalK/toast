@@ -14,3 +14,35 @@ showing up the messages on certain events / actions.
 
 2. Launch the project
     > `npm run dev`
+
+# Example Usage
+1. Inside a component, we can import Toast component, then
+   register it globally, after that, we can pass
+   "type", and "show" props
+
+   ```
+     <toast
+        type="success"
+        :show="showToast"
+        @hide="hide" 
+      />
+   ```
+   
+2. The value of `type` props can be:
+   - success
+   - warning
+   - error
+
+3. Optionally, there is an option to pass
+   the message using `message` props
+   
+   *message appears on the toast notification*
+   ```
+     <toast
+        type="success"
+        message="The data saved successfully"
+        :show="showToast"
+        @hide="hide" 
+      />
+   ```
+   
