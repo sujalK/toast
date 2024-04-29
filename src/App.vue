@@ -1,5 +1,10 @@
 <template>
-  <toast />
+  <button @click="show" class="btn">Show</button>
+  <toast
+      type="error"
+      :show="showToast"
+      @hide="hide"
+  />
 </template>
 <script>
 import Toast from "./components/Toast/Toast.vue";
@@ -10,11 +15,19 @@ export default {
   },
   data () {
     return {
-
+      showToast: false
+    }
+  },
+  methods: {
+    show() {
+      this.showToast = true;
+    },
+    hide() {
+      this.showToast = false;
     }
   }
 }
 </script>
-<style scoped>
+<style>
 
 </style>
