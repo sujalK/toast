@@ -17,7 +17,7 @@ showing up the messages on certain events / actions.
 
 # Example Usage
 1. Inside a component, we can import Toast component, then
-   register it globally, after that, we can pass
+   register it locally, after that, we can pass
    "type", and "show" props
 
    ```
